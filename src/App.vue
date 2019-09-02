@@ -1,17 +1,30 @@
 <template>
   <div id="app">
+    <div v-show="Slider">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Modelo msg="Bem Vindo a Financial Imobiliária."/>
+    </div>
+    <div>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <jardim-slider msg="Bem Vindo a Financial Imobiliária."/>
+    </div>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Modelo from './components/Modelo.vue'
+import JardimSlider from './components/JardimSlider.vue'
 
 export default {
   name: 'app',
+  Slider: false,
   components: {
-    HelloWorld
+    Modelo,
+    JardimSlider
+  },
+  methods:{
+   
   }
 }
 </script>
@@ -22,7 +35,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0f6421;
   margin-top: 60px;
 }
 </style>
